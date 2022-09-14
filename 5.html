@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function () {
+  $('.searchbtn').click(function () {
+    $(this).toggleclass('bg-green');
+    $('.fas').toggleclass('color-white');
+    $('.input').focus().toggleclass('active-width').val('');
+  })
+});
+</script>
+    <title>ایزیapp</title>
+    <style>
+body{
+    background-color: #99bcdf;  
+}
+.wrapper{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.searchebox{
+    position: relative;
+}
+.searchebox .input{
+    width: 0;
+    border: 0;
+    height: 75px;
+    padding: 0 35px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    outline: 0;
+    color: #28bb4d;
+    font-weight: bold;
+    font-size: 24px;
+    transition: all 0.5s linear;
+}
+.searchbtn{
+    position: absolute;
+    top: 0;
+    right: -1px;
+    background-color: #fff;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.6s linear;
+}
+.searchbtn .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #28bb4d;
+    font-size: 22px;
+    transition: all 0.6s linear;
+}
+/* jquery class  */
+.searchbtn.bg-green{
+    background: #28bb4d;
+    transition: all 0.2s linear;
+}
+.searchbtn .fas.color-white{
+    color: #fff;
+    transition: all 0.2s linear;
+}
+.searchebox .input.active-width{
+  width: 275px;
+}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="searchebox">
+            <input type="text" class="input">
+            <div class="searchbtn">
+                <i class="fas fa-search"></i>
+                     
+            </div>
+        </div>
+    </div>
+</body>
+</html>

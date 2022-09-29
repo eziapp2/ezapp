@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/main.js"></script>
+    <title>htmlآموزش</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form role="search" id="form">
+        <div class="searchebox">
+            <input type="search" id="query" name="q" placeholder="google search" aria-label="Search through site content" class="input">
+            <div class="searchbtn">
+                <script>
+                    const f = document.getElementById('form');
+                    const q = document.getElementById('query');
+                    const google = 'https://www.google.com/search?q=site%3A+';
+                    const site = 'https://ezapp.tk/';
+              
+                    function submitted(event) {
+                      event.preventDefault();
+                      const url = google + site + '+' + q.value;
+                      const win = window.open(url, '_blank');
+                      win.focus();
+                    }
+              
+                    f.addEventListener('submit', submitted);
+                  </script>
+                <i class="fas fa-search"></i>     
+            </div> 
+        </div>
+    </form>
+    </div>
+    <div class="container">
+        <nav class="wrapper1">
+          <ul class="main">
+            <li class="front"><a href=""><b>کتابخانه</b></a></li>
+            <li class="front"><a href="#"><b>وبلاگ</b></a></li>
+              <li class="front"><a href="#"><b>دوره‌ها</b></a>
+                <ul class="sub">
+                  <li class="bottom"><a href="#">HTMLآموزش</a></li>
+                  <li class="bottom"><a href="#">خالی</a></li>
+                  <li class="bottom"><a href="#">خالی</a></li>
+                </ul>
+              </li>
+            <li class="front"><a href="index.html"><b><i class="fa fa-home"></i></b></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="p1">
+        <p>
+           <h1><font color="# cc99ff">آموزش مقدمات HTML</font></h1><br>
+           <h3><font color="# e0000e"> فهرست مطالب </font></h3>
+        </p>
+      <div class="f2"> 
+        <ul class="f3 f1"> 
+             <li class="f7" > <a  href="html.html#1"> مقدمه </a> </li>
+             <li class="f7" > <a  href="html.html#2"> یک فایل HTML چیست؟ </a> </li> 
+             <li class="f7" > <a  href="html.html#3"> HTML چیست ؟ </a> </li>
+             <li class="f7" > <a  href="html.html#4"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#5"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#6"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#7"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#8"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#9"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#10"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#11"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#12"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#13"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#14"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#15"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#16"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#17"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#18"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#19"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#20"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#21"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#22"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#23"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#24"> به زودی </a> </li>
+             <li class="f7" > <a  href="html.html#25"> به زودی </a> </li>  
+      </div> 
+      <br>
+      <div>
+        <h2 id="1"> مقدمه </h2>
+        <p>
+            اچ تی ام ال یا HTML یک زبان علامت گذاری استاندارد برای ایجاد صفحات وب است . به نوعی هر صفحه ای رو که سطح وب مشاهده می کنید به زبان HTML نشانه گذاری شده است . مرورگر این صفحات را که با توجه به کدها به صورت قابل فهم برای کاربر نمایش میده. یعنی میاد کدها ، فایل ها ، تصاویر و اطلاعات کلی را بصورت قابل فهم برای کاربر نشون میده . یادگیری HTML رو میشه اولین قدم برای یادگیری طراحی وب دونست . اگر HTML رو به خوبی یاد بگیرید میشه گفت که اصول اولیه طراحی وب رو فرا گرفتید.
+
+در کنار HTML نیز CSS و  JAVASCRIPT هم برای طراحی بخش کاربری یا همون فرانت اند نیز مورد استفاده قرار میگیره . پس اگر میخواید طراحی UI یا بخش کاربری و ظاهری رو فرا بگیرید . یادگیری HTML اولین قدم و قدم بعدی نیز یادگیری CSS و JavaScript خواهد بود . تو این مقاله میخوایم بصورت کامل به معرفی HTML بپردازیم و از پایه و بصورت جامع آموزشش رو قرار بدیم . همراه ما باشید.
+        </p>
+      </div>
+      <br>
+      <div>
+        <h2 id="2">یک فایل HTML چیست؟ </h2>
+        <p>
+HTML را "اچ تی ام ال" و یا اچتمل بخوانید
+ <br>
+HTML برگرفته از حروف اول Language Markup Text Hyper می‌باشد. 
+<br>
+یک فایل HTML فایلی از نوعtext میباشد که متشکل ازmarkup tag ها میباشد.
+<br>
+مرورگر یا Browser از روی markup tag ها می فهمد که چگونه باید صفحه را نمایش بدهد.
+<br>
+یک فایل HTML باید دارای فرمت htm و یا html باشد.
+<br>
+یک فایل HTML فایلی از نوع متن و text میباشد که با هر ویرایشگر و ادیتور ساده ای قابل ایجاد است
+.      
+<br>
+وظیفه اصلی تگ های اچتمل ( markup tags ) بیان چگونگی نمایش اطلاعات میباشد.
+<br><font color="# cc99ff">میخواهید که یک فایل اچتمل بسازید؟
+</font>
+<br>
+اگر از ویندوز مایکروسافت استفاده میکنید Notepad را باز کرده (Mac کارها از SimplaeText استفاده کنند.) و متن زیر را در آن تایپ کنید:
+<br>
+  <p class="codebox">
+    <per>
+      &lt;!DOCTYPE html &gt;
+      <br>
+      &lt;html lang="en" &gt;
+      <br>
+      &lt;head &gt;
+      <br>
+      &lt;meta charset="UTF-8"&gt;
+      <br>
+      &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+      <br>
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      <br>
+      &lt;title&gt;Document&lt;/title&gt;
+      <br>
+      &lt;head/&gt;
+      <br>
+      &lt;body>
+      <br>
+      &lt;body/&gt;
+      <br>
+      &lt; html/&gt; 
+    </per>
+  </p>
+  <font color="# cc99ff">نکته:در VS code با نوشتن ! و اینتر یا tap  زدن ساختار بالا ایجاد می شود.
+  </font>
+<br>
+سپس فایل را با نام مثلا test.html در درایو c\: ذخیره کنید.
+<br>
+برای دیدن فایل اچتمل بالا در مرورگر کافی است که از روی منوی File/Open file فایل بالا را از روی محل ذخیره شده بخوانید. ( به آدرس فایل در قسمت Address توجه کنید، مثلا c:\test.html) یکی از مهمترین وظایف مرورگرها نمایش صفحات اچتمل میباشد، چه این صفحات روی کامپیوتر شما ذخیره شده باشند و یا اینکه روی سروری دیگر از اینترنت خوانده شوند. با کلیک روی این لینک فایلی شبیه فایل ذخیره شده توسط شما از روی وب سرور توسط مرورگرتان خوانده شده و سپس نمایش داده خواهد شد!!!
+      </div>
+      <br>
+      <div>
+        <h2 id="3">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="4">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="5">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="6">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="7">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="8">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="9">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="10">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="11">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="12">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="13">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="14">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="15">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="16">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="17">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="18">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="19">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="20">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="21">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="22">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="23">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="24">به زودی</h2>
+      </div>
+      <br>
+      <div>
+        <h2 id="25">به زودی</h2>
+      </div>
+</div>
+</body>
+</html>

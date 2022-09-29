@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/main.js"></script>
+    <title>ایزیapp</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form role="search" id="form">
+        <div class="searchebox">
+            <input type="search" id="query" name="q" placeholder="google search" aria-label="Search through site content" class="input">
+            <div class="searchbtn">
+                <script>
+                    const f = document.getElementById('form');
+                    const q = document.getElementById('query');
+                    const google = 'https://www.google.com/search?q=site%3A+';
+                    const site = 'https://ezapp.tk/';
+              
+                    function submitted(event) {
+                      event.preventDefault();
+                      const url = google + site + '+' + q.value;
+                      const win = window.open(url, '_blank');
+                      win.focus();
+                    }
+              
+                    f.addEventListener('submit', submitted);
+                  </script>
+                <i class="fas fa-search"></i>     
+            </div> 
+        </div>
+    </form>
+    </div>
+    <div class="container">
+        <nav class="wrapper1">
+          <ul class="main">
+            <li class="front"><a href=""><b>کتابخانه</b></a></li>
+            <li class="front"><a href="#"><b>وبلاگ</b></a></li>
+              <li class="front"><a href=""><b>دوره‌ها</b></a>
+                <ul class="sub">
+                  <li class="bottom"><a href="html.html">HTMLآموزش</a></li>
+                  <li class="bottom"><a href="#">به زودی</a></li>
+                  <li class="bottom"><a href="#">به زودی</a></li>
+                </ul>
+              </li>
+            <li class="front"><a href="#"><b><i class="fa fa-home"></i></b></a></li>
+          </ul>
+        </nav>
+      </div>
+</body>
+</html>
